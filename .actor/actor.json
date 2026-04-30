@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "pacer-court-locator-scraper",
+  "title": "Federal Court Locator Scraper",
+  "description": "Pull every US federal court (district, bankruptcy, appellate, special) with PACER court ID, RSS feed, court URL, jurisdiction, and citation. Filter by jurisdiction and active status. Export to JSON, CSV, or Excel for legal directories and PACER integrations.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "input": "./input_schema.json"
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Federal Court Locator Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "maxItems": {
+      "title": "Max Items",
+      "type": "integer",
+      "description": "Free users: Limited to 10 items (preview). Paid users: Optional, max 1,000,000.",
+      "editor": "number",
+      "prefill": 10,
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "type": "string",
+      "description": "Filter by court type. F=Federal/SCOTUS, FD=Federal District, FB=Federal Bankruptcy, F=Federal Appellate, FBP=Federal Bankruptcy Panel, FS=Federal Special.",
+      "editor": "select",
+      "default": "all",
+      "prefill": "FD",
+      "enum": ["all", "F", "FD", "FB", "FBP", "FS", "FSP"],
+      "sectionCaption": "Search",
+      "sectionDescription": "Pulls from the Court Listener public API which mirrors the federal court directory."
+    },
+    "inUseOnly": {
+      "title": "Active courts only",
+      "type": "boolean",
+      "description": "When enabled, only returns courts marked as currently in use.",
+      "editor": "checkbox",
+      "default": true
+    },
+    "courtName": {
+      "title": "Court name filter (optional)",
+      "type": "string",
+      "description": "Case-insensitive substring match on full court name.",
+      "editor": "textfield"
+    }
+  },
+  "required": []
+}
