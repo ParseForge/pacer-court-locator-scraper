@@ -8,7 +8,7 @@
 
 The **Federal Court Locator Scraper** returns every US federal court (district, bankruptcy, appellate, special) with PACER court ID, FJC court ID, RSS feed status, court URL, jurisdiction code, citation string, parent court, and active flag. Each record also includes capability flags for opinion and oral argument scrapers, which Court Listener tracks per court.
 
-The Court Listener REST API is the de-facto canonical machine-readable source for federal court structure, used by Free Law Project, RECAP, and many legal-tech tools. The official PACER court locator is JS-rendered and hard to scrape directly. This Actor leverages Court Listener's clean public API and returns federal court metadata as structured records in seconds.
+The Court Listener REST API is the de-facto canonical machine-readable source for federal court structure, used by Free Law Project, RECAP, and many legal-tech tools. The official PACER court locator is JS-rendered and hard to scrape directly. This Actor reads Court Listener's clean public API and returns federal court metadata as structured records in seconds.
 
 | 🎯 Target Audience | 💡 Primary Use Cases |
 |---|---|
